@@ -1,29 +1,159 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>BeaverAUV - About</title>
-  <link rel="stylesheet" href="about-style.css">
-    <script src="js/scripts.js"></script>
-</head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 80%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
 <body>
-  <div id="nav" class="nav">
-        <div class="topnav">
-            <a href="../sponsor/sponsor.html">Sponsors</a>
-            <a class="active" href="/about/about.html">About Us</a>
-            <a href="/team/team-members.html">The Team</a>
-            <a href="../vehicle/vehicle.html">The Vehicle</a>
-            <a href="../index.html">Home</a>
-            <a href="../index.html" style="float:left;height:fit;width:fit;padding: 2px 10px;background:#999999;">
-                <img src="/images/beaverauv_logo.png" height="40px" width="60px">
-            </a>
-        </div>
-    </div>
-    <div style="width:100%;height:auto;border-color:red;border-style:solid;">
-        <h1 style="text-align:center;">The Team</h1>
-        <p style="text-align:center;border-color:green;border-style:solid;float:middle;">BeaverAUV is based is Chestnut Hill, MA at the high school Beaver Country Day</p>
-    </div>
+
+<div class="header">
+  <img src="http://beaverauv.org/assets/beaverauv.png" alt="Trulli" 
+  width="200" height="115">
+</div>
+
+<div class="navbar">
+  <a href="#">About</a>
+  <a href="#">Images</a>
+  <a href="#">Sponsers</a>
+  <a href="#">Vehicle</a>
+  <a href="#" class="right">Home</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Contact Us</h2>
+    <div class="img" style="height:200px;">Image</div>
+    <p>Please follow our accounts and feel free to reach out with questions! </p><br>
+    <img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png" alt="instagram" width="100" height="100">
+    <p>@beaverrobosub</p><br>
+    <img src="https://i.pinimg.com/originals/28/90/ba/2890bac9ba41e52707f36268231dfe9e.png" alt="twitter" width="100" height="100"> 
+    <p>@beaverAUV</p><br>
+    <img src="https://www.freepngimg.com/thumb/logo/64838-icons-symbol-envelope-computer-mail-logo-email.png" alt="mail" width="100" height="100">
+    <p>beaverauv@bcdschool.org</p><br>
+  </div>  
+    
+  <div class="main">
+    <h2>About Beaver AUV</h2>
+    <img src="https://pbs.twimg.com/media/D89VHf1XoAATON1?format=jpg&name=medium" alt="3dPrint" width="550" height="333">
+    <p>We are a program out of Beaver Country Day School and...</p>
+    <br>
+    <h2>The Team</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <img src="IMG_0162.jpg" alt="Trulli" width="500" height="300">
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
 </body>
 </html>
